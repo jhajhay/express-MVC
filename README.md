@@ -35,4 +35,5 @@ This MVC is one of the project I made in my training in Village88. I use NodeJS 
 ## To run?
 * Open command promp
 * Navigate your project folder
-* type this command `nodemon app.js` 
+* Type this command `nodemon app.js` 
+* Open browser and enter the URL `localhost:<port here>/<route here>`
