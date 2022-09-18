@@ -22,3 +22,17 @@ This MVC is one of the project I made in my training in Village88. I use NodeJS 
 9. **profiler.js** - this file is also one of the system file that should not be editted. This file manages all profiler output if the profiler is enabled. 
 10. **form_validation.js** - this file is also one of the system file that should not be editted. This file manages all form validation as well as setting rules for inputs.
 11. **rules.js** - this file is also one of the system file that should not be editted. This file contains all validation rule methods.
+
+## Ho to use?
+1. Download this express MVC template
+2. Edit configuration in `config.js` file
+3. Create routes in `routes.js` file
+4. Create controller in `controller` folder and create method for viewing the page
+5. Create model in `model` folder
+6. Create pages in `views` folder
+7. Add your CSS file in `assets` folder
+
+## To run?
+* Open command promp
+* Navigate your project folder
+* type this command `nodemon app.js` 
