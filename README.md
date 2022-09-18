@@ -18,3 +18,7 @@ This MVC is one of the project I made in my training in Village88. I use NodeJS 
 5. **route.js** - this file will contains all users created routes.
 6. **controller.js** - this file contains the controller class that extended for all created controllers. This file should not be editted because it is one of the core file of the MVC. It manages all created controllers as well as rendering and redirecting pages. It also handle sessions data and data encryption. 
 7. **model.js** - this file contains the model class that extended for all created models. This file should not be editted because it is one of the core file of the MVC. It manages all created models as well as validation of forms and and queries.
+8. **routes.js** - this file is also one of the system file that should not be editted. This file manages all routes created by the user.
+9. **profiler.js** - this file is also one of the system file that should not be editted. This file manages all profiler output if the profiler is enabled. 
+10. **form_validation.js** - this file is also one of the system file that should not be editted. This file manages all form validation as well as setting rules for inputs.
+11. **rules.js** - this file is also one of the system file that should not be editted. This file contains all validation rule methods.
