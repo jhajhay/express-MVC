@@ -140,9 +140,34 @@ This MVC is one of the project I made in my training in Village88. I use NodeJS 
     - `this.security.encrypt()` - it is a method for encrypting data using the `bcryptjs` module. It takes one parameter which is the data to be encrypted and the syntax of it is like this `this.security.encrypt(password)`.
     - `this.security.decrypt()` - it is a method for decrypting data and return true or false. It takes two parameter, the data to be compared and the encrypted data using `this.security.encrypt()`. The syntax is like this `this.security.decrypt(password,password_from_db)` and it will return true if they are the same and false if not.
     - `this.query()` - it is a method for querieng data to database. It takes two parameter which is the query string and array data for parameterized query. The syntax of this method is like this `this.query(query_string, data_array)`
+- **Form Validation Rules**
+    |   Rules  | Syntax | Has Parameter | Description |
+    | -------- | ------ | ----------|------------|
+    | required | ["required"] | No | Returns error message if the form element is empty.
+    | matches | ["matches", data] | Yes | Returns error message if the form element does not match the one in the parameter.
+    | differs  | ["differs", data]  | Yes  | Returns error message if the form element does not differ from the one in the parameter.  |
+    | min_length  | ["min_length", length]  | Yes  | Returns error message if the form element is shorter than the parameter value.  |
+    | max_length  | ["max_length", length]  | Yes  | Returns error message if the form element is longer than the parameter value.  |
+    | exact_length  | ["exact_length", length]  | Yes  | Returns error message if the form element is not exactly the parameter value.  |
+    | greater_than  | ["greater_than", number]  | Yes  | Returns error message if the form element is less than or equal to the parameter value or not numeric.  |
+    | greater_than_equal_to  | ["greater_than_equal_to", number]  | Yes  | Returns error message if the form element is less than the parameter value, or not numeric.  |
+    | less_than  | ["less_than", number]  | Yes  | Returns error message if the form element is greater than or equal to the parameter value or not numeric.  |
+    | less_than_equal_to  | ["less_than_equal_to", number]  | Yes  | Returns error message if the form element is greater than the parameter value, or not numeric.  |
+    | in_list  | ["in_list", array_list]  | Yes  | Returns error message if the form element is not within a predetermined list.  |
+    | alpha  | ["alpha"]  | No  | Returns error message if the form element contains anything other than alphabetical characters.  |
+    | alpha_numeric  | ["alpha_numeric"]  | No  | Returns error message if the form element contains anything other than alpha-numeric characters.  |
+    | alpha_numeric_spaces  | ["alpha_numeric_spaces"]  | No  | Returns error message if the form element contains anything other than alpha-numeric characters or spaces. Should be used after trim to avoid spaces at the beginning or end.  |
+    | alpha_dash  | ["alpha_dash"]  | No  | Returns error message if the form element contains anything other than alpha-numeric characters, underscores or dashes.  |
+    | numeric  | ["numeric"]  | No  | Returns error message if the form element contains anything other than numeric characters.  |
+    | integer  | ["integer"]  | No  | Returns error message if the form element contains anything other than an integer.  |
+    | decimal  | ["decimal"]  | No  | Returns error message if the form element contains anything other than a decimal number.  |
+    | is_natural  | ["is_natural"]  | No  | Returns error message if the form element contains anything other than a natural number: 0, 1, 2, 3, etc.  |
+    | valid_url  | ["valid_url"]  | No  | Returns error message if the form element does not contain a valid URL.  |
+    | valid_email  | ["valid_email"]  | No  | Returns error message if the form element does not contain a valid email address.  |
+    | valid_ip  | ["valid_ip"]  | No  | Returns error message if the supplied IP address is not valid. |
 ### 6. Create pages in `views` folder
 - Created file in views must be an ejs file extension
-### 7. Add your CSS file in `assets` folder
+### 7. Add your static file in `assets` folder
 - Static files like images, css, js and many more must be placed in the `assets` folder.
 
 ## How to run?
